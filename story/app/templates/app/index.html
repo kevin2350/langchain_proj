@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storybuilder</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        html, body {
+            display: flex;
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            background-color:aliceblue
+        }
+        form {
+            margin-top: 50px;
+            border: 5px solid #f1f1f1;
+            background-color: white;
+        }
+        input[type=text], input[type=number] {
+            width: 100%;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #427cbf;
+            color: white;
+            padding: 14px 0;
+            margin: 10px 0;
+            border: none;
+            cursor: grabbing;
+            width: 100%;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .formcontainer {
+            padding-top: 10px;
+            margin: 24px 50px 12px;
+        }
+        .container {
+            padding: 16px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+        <div class="formcontainer">
+            <h1>Story Idea Generator</h1>
+            <h3>In need of inspiration or ideas?</h3>
+            <h3>Create a short story from a set of keywords.</h3>
+            <div class="container">
+                <label><strong>Enter keywords</strong></label>
+                <input type="text" name="keywords" placeholder="ex. 'gold, running, butterfly, forest'" required><br>
+            </div>
+            <button type="submit">Generate Story</button>
+            <br>
+            <p>{{res}}</p>
+        </div>
+    </form>
+</body>
+</html>

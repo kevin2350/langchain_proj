@@ -20,7 +20,7 @@ def index(request):
 
 # llm
 def generate(keywords_input):
-    llm = OpenAI(model_name='text-davinci-003', temperature=.8, openai_api_key='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')
+    llm = OpenAI(model_name='text-davinci-003', temperature=.8, openai_api_key='')
 
     # first chain, generate plot
     template = """
